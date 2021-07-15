@@ -13,12 +13,14 @@ pipeline {
         git branch:'dev' url: 'https://github.com/govarthinisundararaj/Spring-Boot.git'
       }
     }
+  }
   stages {
     stage ('Build') {
       steps {
         sh 'mvn clean install'
       }
     } 
+  }
   stages {
     stage ('Docker_compose_up') {
       steps {
@@ -26,4 +28,5 @@ pipeline {
        sh 'docker-compose up -d --abort-on-container-exit'
       }
     } 
+  }
   }
