@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage ('checkout') {
       steps {
-        git branch:'dev' url: 'https://github.com/govarthinisundararaj/springboothelloworldazure.git'
+        git branch:'dev' url: 'https://github.com/govarthinisundararaj/Spring-Boot.git'
       }
     }
   stages {
@@ -23,6 +23,6 @@ pipeline {
     stage ('Docker_compose_up') {
       steps {
        sh 'docker-compose build'
-       sh 'docker-compose up --abort-on-container-exit'
+       sh 'docker-compose up -d --abort-on-container-exit'
       }
     } 
