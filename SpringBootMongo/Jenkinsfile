@@ -26,3 +26,4 @@ pipeline {
        sh 'docker-compose up -d --abort-on-container-exit'
       }
     } 
+  }
