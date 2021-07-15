@@ -10,7 +10,7 @@ pipeline {
   stages {
     stage ('checkout') {
       steps {
-        
+        git url: 'https://github.com/govarthinisundararaj/springboothelloworldazure.git'
       }
     }
   stages {
