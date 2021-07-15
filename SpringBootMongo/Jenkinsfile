@@ -1,0 +1,27 @@
+pipeline {
+  
+  
+  agent { label 'ubuntu_micro'}
+  
+  tools {
+          maven 'maven3'
+          docker 'docker'
+  }
+  stages {
+    stage ('checkout') {
+      steps {
+        
+      }
+    }
+  stages {
+    stage ('Build') {
+      steps {
+        
+      }
+    } 
+  stages {
+    stage ('Docker_compose_up') {
+      steps {
+        
+      }
+    } 
